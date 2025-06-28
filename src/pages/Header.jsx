@@ -58,20 +58,48 @@ const goToSection = (path, sectionId) => {
           <div className="flex flex-col sm:flex-row gap-4">
             {/* Call to action button for viewing projects */}
 
-            <div class="box-2">
-              <div class="btn btn-two">
-                <button onClick={() => goToSection('/projects', 'projects')} > View My Work</button>
-              </div>
-            </div>
+  <div className="flex justify-center items-center h-1/3 w-[150px] rounded-[10px] bg-[#aad1eb]">
+  <div className="relative group w-[150px] h-[50px] cursor-pointer">
+    {/* Hover Background Layer */}
+    <div className="absolute inset-0 w-full z-0 border border-gray-400/20 bg-[#530bbb33] rounded-[10px] transition-all duration-500 group-hover:rotate-45"></div>
+
+    {/* Hover Layer #2 */}
+    <div className="absolute inset-0 w-full z-0 border border-white/20 bg-[#a7edf7]/10 rounded-[10px] transition-all duration-500 group-hover:-rotate-45"></div>
+
+    {/* Actual Button Text Layer */}
+    <button
+      onClick={() => goToSection('/projects', 'projects')}
+      className="relative z-10 w-full h-full font-mono font-bold text-black text-base rounded-[10px] bg-transparent transition-all duration-300"
+    >
+      View My Work
+    </button>
+  </div>
+</div>
+
+
             
             
             
             {/* Secondary call to action button for contact */}
-            <div class="box-2">
-              <div class="btn btn-two">
-              <button onClick={() => goToSection('/contact', 'contact')}> Get in Touch</button>
-              </div>
-            </div>
+<div className="flex justify-center items-center h-1/3 w-[150px] rounded-[10px] bg-[#aad1eb]">
+  <div className="relative group w-[150px] h-[50px] cursor-pointer">
+    {/* Hover Background Layer */}
+    <div className="absolute inset-0 w-full z-0 border border-gray-400/20 bg-[#530bbb33] rounded-[10px] transition-all duration-500 group-hover:rotate-45"></div>
+
+    {/* Hover Layer #2 */}
+    <div className="absolute inset-0 w-full z-0 border border-white/20 bg-[#a7edf7]/10 rounded-[10px] transition-all duration-500 group-hover:-rotate-45"></div>
+
+    {/* Actual Button Text Layer */}
+    <button
+      onClick={() => goToSection('/projects', 'projects')}
+      className="relative z-10 w-full h-full font-mono font-bold text-black text-base rounded-[10px] bg-transparent transition-all duration-300"
+    >
+      Get In Touch
+    </button>
+  </div>
+</div>
+
+
             </div>
         </section>
 
