@@ -4,6 +4,8 @@ import DownloadResume from './Download';
 import { useLocation,useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
+import coderImage from '@/assets/myImg.png';
+
 
 // Main App component
 const Header = () => {
@@ -93,7 +95,7 @@ const goToSection = (path, sectionId) => {
               className="hidden md:flex items-center justify-center relative"
               >         
               <motion.img
-                src='/files/myImg.png'
+                src={coderImage}
                 alt="Dev Sharma"
                 className="rounded-xl shadow-xl border border-gray-700 hover:scale-95 transition-transform duration-500"
                 initial={{ opacity: 0 }}
