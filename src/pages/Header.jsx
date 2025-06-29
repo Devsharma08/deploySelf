@@ -91,7 +91,7 @@ const goToSection = (path, sectionId) => {
 
     {/* Actual Button Text Layer */}
     <button
-      onClick={() => goToSection('/projects', 'projects')}
+      onClick={() => goToSection('/contact', 'contact')}
       className="relative z-10 w-full h-full font-mono font-bold text-black text-base rounded-[10px] bg-transparent transition-all duration-300"
     >
       Get In Touch

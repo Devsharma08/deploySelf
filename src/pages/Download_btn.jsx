@@ -2,9 +2,9 @@ import React from 'react';
 
 const DownloadButton = () => {
   return (
-    <div className="flip-container">
+    <div className="w-full flex justify-center items-center px-4 py-6 sm:py-10">
       <a
-        href="/files/DevSharma-Intern_Resume-3rd-year-Btech.pdf"  // Make sure this path is correct
+        href={`${import.meta.env.BASE_URL}files/DevSharma-Intern_Resume-3rd-year-Btech.pdf`}
         download="Dev-Resume.pdf"
         className="btn-flip"
         data-front="Download"

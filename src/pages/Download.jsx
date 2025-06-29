@@ -4,23 +4,27 @@ import DownloadButton from './Download_btn';
 
 const DownloadResume = () => {
   return (
-    <div className="flex items-center justify-between bg-black text-white p-10">
-      <div className='flex flex-col items-start'>
-      <p className="text-4xl mb-4 font-semibold text-center duration-700 brightness-150 animate-pulse font-mono">
-        Dev Sharma | MERN Stack Develor
-      </p>
-      <p className='text-lg font-mono mb-4 font-thin text-center'>
-        Wanted to know about my proffessional growth download the attached resume.
-      </p>
+    <div className="flex flex-col sm:flex-row items-center justify-between gap-6 bg-black text-white px-6 py-10 sm:px-10">
+      {/* Text Section */}
+      <div className="flex flex-col items-start text-center sm:text-left">
+        <p className="text-2xl sm:text-4xl mb-4 font-semibold duration-700 brightness-150 animate-pulse font-mono">
+          Dev Sharma | MERN Stack Developer
+        </p>
+        <p className="text-sm sm:text-lg font-mono mb-4 font-thin">
+          Want to know about my professional growth? Download the attached resume.
+        </p>
       </div>
+
+      {/* Download Button */}
       <a
-        href="/files/DevSharma-Intern_Resume-3rd-year-Btech.pdf"
+        href={`${import.meta.env.BASE_URL}files/DevSharma-Intern_Resume-3rd-year-Btech.pdf`}
         download="Dev-Resume.pdf"
-        className='flex space-x-2 justify-center items-center'
+        className="flex ml-5 justify-center items-center max-551:flex "
       >
-        <FaDownload className="icon"  />
-        <DownloadButton/>
-        </a>
+        <FaDownload className="text-md sm:text-lg md:text-xl lg:text-2xl" />
+
+        <DownloadButton />
+      </a>
     </div>
   );
 };
